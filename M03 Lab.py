@@ -1,3 +1,7 @@
+# Module 03 Lab
+# Thomas Gordon
+# Program defines a class of Vehicle, and a Subclass of Automobile, then loops through a list of questions for the user to define a new instance of Automobile
+
 class Vehicle:
     def __init__(self, v_type):
         self.v_type = v_type
@@ -16,6 +20,7 @@ class Automobile(Vehicle):
     def __str__(self):
         return f"Vehicle Type: {self.v_type}\nYear: {self.year}\nMake: {self.make}\nModel: {self.model}\nNumber of Doors: {self.doors}\nType of Roof: {self.roof}"
 
+# A list of all the questions that will be asked to the user
 input_list = ["What type of vehicle is being registered?\n", "What year is the vehicle?\n", "What is the make?\n", "What is the Model?\n", "How many doors does it have?\n", "What type of roof does it have? Hard Top/Rag Top/Sun Roof/Standar\n"]
 
 for i in range(6):
